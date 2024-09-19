@@ -1,7 +1,8 @@
-const dotenv = require("dotenv").config();
-import OpenAI from "openai";
+// const dotenv = require("dotenv").config();
+// import OpenAI from "openai";
 
 exports.handler = async (event) => {
+  console.log("hello");
   //   const openai = new OpenAI({
   //     apiKey: process.env.OPENAI_API_KEY,
   //   });
@@ -46,5 +47,17 @@ exports.handler = async (event) => {
   //       body: typeof error === "string" ? error : JSON.stringify({ error }),
   //     };
   //   }
-  console.log("this is the testFunc in netlify/functions");
+
+  if (event.httpMethod !== "POST") {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({ error: "Method Not Allowed" }),
+    };
+  }
+
+  console.log("Received request body:", event.body);
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello from POST request!" }),
+  };
 };
