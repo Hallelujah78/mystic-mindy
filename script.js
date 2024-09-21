@@ -5,9 +5,9 @@ const testFunc = async () => {
 
   try {
     const response = await fetch(apiURL, {
-      method: "POST",
+      method: "GET",
       headers: { accept: "application/json" },
-      body: JSON.stringify("test"),
+      // body: JSON.stringify("test"),
     });
     console.log(response);
   } catch (error) {
