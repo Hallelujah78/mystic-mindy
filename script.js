@@ -1,13 +1,14 @@
 const button = document.querySelector(".fetch");
 
-const testFunc = async () => {
-  const apiURL = "/.netlify/functions/testFunc";
+const audio = document.getElementById("myAudio");
 
+const testFunc = async () => {
+  const apiURL = "/.netlify/functions/testFuncXXX"; // fail
+  audio.play();
   try {
     const response = await fetch(apiURL, {
       method: "GET",
       headers: { accept: "application/json" },
-      // body: JSON.stringify("test"),
     });
     console.log(response);
   } catch (error) {
