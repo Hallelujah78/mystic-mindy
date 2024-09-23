@@ -21,8 +21,25 @@
 </head>
 
 <body>
-    <div class="loading">
+    <div class="fortune">
+        <div class="fortune-img-container">
+            <img src="./parchment.jpg" alt="a piece of parchment paper">
+        </div>
+
+        <article class="fortune-text">
+            <p>the fortune text goes here</p>
+        </article>
+
+    </div>
+    <div class="overlay"></div>
+    <div class="loading hidden">
         <p>Communing with the spirit world ... Please hold while we connect you. Beep boop!</p>
+        <div class="spinner-container">
+
+            <div class="spinner">
+            </div>
+        </div>
+
     </div>
     <nav>
         <div class="nav-container">
@@ -55,7 +72,7 @@
                 <p class="call-to-action">Click the Crystal Ball to Receive the Gift of My Wisdom!</p>
 
                 <div class="button-container">
-                    <button class="fetch"><img class="button-icon" src="./public/crystal_ball.svg" /></button>
+                    <button class="fetch"><img class="button-icon" src="/crystal_ball.svg" /></button>
                     <audio id="myAudio">
                         <source src="woof.mp3" type="audio/mpeg">
                     </audio>
