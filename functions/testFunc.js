@@ -30,16 +30,16 @@ exports.handler = async (event) => {
         },
       ],
       temperature: 0.8,
-      max_tokens: 4095,
+      max_tokens: 300,
       top_p: 1,
       frequency_penalty: 0,
       presence_penalty: 0,
     });
     const { content } = response.choices[0].message;
-    console.log(content);
+
     return {
       statusCode: 200,
-      body: content,
+      body: JSON.stringify(content),
     };
   } catch (error) {
     return {
