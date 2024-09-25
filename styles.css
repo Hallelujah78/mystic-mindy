@@ -57,7 +57,7 @@ img {
     height: auto;
     display: grid;
     place-content: center;
-    margin-top: var(--nav-height);
+
 
 }
 
@@ -83,7 +83,7 @@ img {
 .about-content {
     width: 60%;
     margin: auto;
-    margin-top: var(--nav-height);
+    /* margin-top: var(--nav-height); */
     height: 70vh;
 }
 
@@ -159,6 +159,7 @@ button {
 .call-to-action {
     margin-top: 2rem;
     text-align: center;
+    font-size: 1.25rem;
 }
 
 
@@ -313,4 +314,19 @@ img.paw-signature {
 
 h1.sig-text {
     font-size: 2rem;
+}
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+    width: 100%;
+    height: 5rem;
+}
+
+footer div p {
+    width: 100%;
+    text-align: center;
+    margin-top: .5rem;
 }
