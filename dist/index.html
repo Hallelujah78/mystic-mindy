@@ -7,26 +7,98 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Buda&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 
     <title>Mystic Mindy</title>
-  <script type="module" crossorigin src="/assets/index-FwwWBUW7.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-dWVnHA2h.css">
+  <script type="module" crossorigin src="/assets/index-qRzmBnRs.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dm_R9SIB.css">
 </head>
 
 <body>
-    <section>
-        <div>
-            <p>Hi, I'm Mindy the Dog!</p>
-            <p>I have been known by many names throughout the eons: some call me Mindy Moo, others Mindy the Moosicle.
-                Some, for reasons best left unsaid, refer to me as Pooprah Winfrey. Anyhoo, I'm a bit psychic so feel
-                free to ask me your fortune!</p>
+    <div class="fortune hidden">
+        <div class="fortune-img-container">
+            <img src="./parchment.jpg" alt="a piece of parchment paper in a cartoon style">
+        </div>
 
+        <article class="f-text-container">
+            <p class="f-text"></p>
+            <div class="signature">
+                <h1 class="gloria-hallelujah-regular sig-text">Mindy</h1> <img class="paw-signature"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA9xJREFUWEe1l2nIVmUQhi+zTak0KpcWCZco0zAiWhGzUCiVFqLoR0WWC5ZKglqabZoWSJSlYJESRSsFIQot5hJokUsWaoKmVJRhSIUVLeZzyZw43/Gc89b7fc6/9zzzzNwzz8w987ajsbQHpgFjgBOBD4B7gW2Fq0cAo4G7gK7AR8AUYGedi3aN/TMPuLug9wNwAfBNfNfOSwnULQU9zwcAP1b5aQSgL/A5YHRFeQ24OT6OBeZXOJkN3N8sgIeBGRWX/0pOuwA/AbuA0yv0NgLnNwvgdeDGmmcanOrhZ+DTGp3vge7NAngVuKnG+HDgWOCNGp3N6fzcZgHUPYE2Te0ZwDs1AJ4DRv1XAKbqd2BvXDgP8A3LivVr4MxoOau9rFD3AxcC68PeSdHKXwF/+y0zfAkgUlP1D7A8enp7crIYuK0kAvv9+fj+ckkLevREcEG3BHRBAjIigFq0I+UUAfSKKI8rONkNCOy7cGSPq/8n8HiK4IGc/glRB0Pim1nU+UMR8VqgT8H+b3KEBsuIJtM1E1fGj54BdhMgOCOYCOxLUT0CLAX6AadEQNkzLgx2LCuDeQLQYP+aIrIOJKNMvGM6pd1MfLZJwJMFO1K3bXh0hf0NGrOYqkjEexOAp3MGJscTFG0K4tpCR9imdR2yQwBrgItrMjAz995S84aaiJwRZ+e66M4o7irzqwRgoTxYA+Ae4Jk4fy9NuatqdD0yW2ZNMSNv1+hPE4CjcyvQuUTRtJ4DfJnG6u3AogbOPba/Lwes/JNTAX5bkTGL9KyMB64B3ipR1OEdgKn/GCi2ahUeiUYCcgzPjf0hr2srXw8syTPcRQnAY8ClMeEkJtvLKFwubMP/I6tSfQ0N3pAzfMpOkZn7Unuv1lijfeA0wHf3GZqRd4HrgF/Dl9uVY/xfqQPgxmMBOWxaI59Euq2FQ6QMwJFBKk7CY1rjOXd3TzyB472FFAEY9YtRdJminfBFIp8Oae/r3UpAHwK35nbJFjUgh29Js8GRmYmbzitBVJcBp7YSgNc/i4W2xTj2YGpKuQtkJr8AsqCTr63lamCZRvNPsASQDzLxvRxEckBby6zUDdOLAOxLGSyTOVGMR7W19zSyn83+a+Qz8GYauzfknDlaHSbHHwYArvqPFjMwPm0vT+WcrQN6xILR1hgGASuLAKx+OfxwRJwPwDXdBciF9RAqHpcbvY2idrFcEeuZc8LK7tjgkq3nOPfeQSljQgeSLVlF015W5/3YoDNbrvTuf8MqQPwR/7BbjPQqJ1fECLUrHMHu/U7EFwDZrE7MhPviwNgxpGGHkl2V3y0P2jgAWlK304yifCkAAAAASUVORK5CYII=" alt="a dog's pawprint">
+            </div>
+        </article>
+        <button class="exit-btn">EXIT</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="loading hidden">
+        <p>Communing with the spirit world ... Please hold while we connect you. Beep boop!</p>
+        <div class="spinner-container">
+
+            <div class="spinner">
+            </div>
         </div>
-        <button class="fetch">Fetch My Fortune!</button>
-        <div class="img-container">
-            <img src="/assets/20230318_141955-dh8HNefg.jpg" alt="my doggy">
+
+    </div>
+    <nav>
+        <div class="nav-container">
+            <div class="title">
+
+                <p><a href="#">Mindy Browne | Canine Fortune Teller</a></p>
+
+            </div>
+            <div class="links">
+
+                <p><a href="#">Home</a></p>
+
+            </div>
         </div>
-    </section>
+
+    </nav>
+    <div class="content-container">
+
+        <section class="image-section">
+            <div class="img-container">
+                <img class="wiggle" src="/mystic_mindy_transparent.png"
+                    alt="a mystical dog sitting on a table with tarot cards">
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="about-content">
+                <h1 class="gloria-hallelujah-regular">Hi, My Name is Mindy Moo.</h1>
+                <h2>Born of the Stars. Black Belt in Astrology. Second Dan in Tarot. Unsurpassed in the
+                    Art of Foresight.</h2>
+                <p class="call-to-action">Click the Crystal Ball to Receive the Gift of My Wisdom!</p>
+
+                <div class="button-container">
+                    <button class="fetch"><img class="button-icon" src="/crystal_ball.svg" /></button>
+                    <audio id="myAudio">
+                        <source src="woof.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p class="copyright">&copy; Gavan Browne
+                    <script>document.write(new Date().getFullYear())</script>
+                </p>
+                <p><a href="https://gwib-personal-portfolio-react.netlify.app/">
+                        portfolio
+
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
 </body>
 
 </html>

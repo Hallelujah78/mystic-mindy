@@ -26,3 +26,5 @@
 - Fortunes come from OpenAI
 - crystal ball icon from https://www.svgrepo.com
 - Dog and parchment images generated with https://deepai.org/machine-learning-model/text2img
+
+- updated notes so i can redeploy, netlify function not working right now
