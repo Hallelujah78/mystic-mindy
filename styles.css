@@ -378,4 +378,10 @@ footer div p {
     .button-container {
         margin-top: 1.75rem;
     }
+
+    .loading {
+        width: 90%;
+    }
+
+
 }
