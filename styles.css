@@ -296,7 +296,6 @@ img.paw-signature {
     font-size: 1rem;
     transform: rotateZ(15deg);
     margin-left: 1rem;
-
 }
 
 .signature {
@@ -383,5 +382,23 @@ footer div p {
         width: 95%;
     }
 
+    .fortune img {
+        width: 95vw;
+        height: 70vh;
+    }
 
+    .f-text-container {
+        max-height: 42vh;
+        height: 42vh;
+        margin-left: 1rem;
+        font-size: 1rem;
+    }
+
+    img.paw-signature {
+        width: 1.75rem;
+        height: auto;
+        font-size: 1rem;
+        transform: rotateZ(15deg);
+        margin-left: 1rem;
+    }
 }

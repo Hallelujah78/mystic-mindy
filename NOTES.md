@@ -19,6 +19,9 @@
 # To Do
 
 - light/dark favicons for preferred theme
+- the fortune "manuscript" remembers where the user has scrolled to
+  - subsequent fortune retrieval means the fortune is scrolled to the bottom when it is opened
+- disable scrolling and/or force scroll to top of the main page when we click the crystal ball
 
 # Sources
 
