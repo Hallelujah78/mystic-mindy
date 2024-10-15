@@ -5,13 +5,18 @@ const overlay = document.querySelector(".overlay");
 const fortuneText = document.querySelector(".f-text");
 const fortune = document.querySelector(".fortune");
 const exitButton = document.querySelector(".exit-btn");
+const html = document.querySelector("html");
+const fortuneTextContainer = document.querySelector(".f-text-container");
 
 const exit = () => {
   overlay.classList.add("hidden");
   fortune.classList.add("hidden");
+  html.classList.remove("disable-scroll");
 };
 
 const testFunc = async () => {
+  html.scrollTop = 0;
+  html.classList.add("disable-scroll");
   loading.classList.remove("hidden");
   overlay.classList.remove("hidden");
   const apiURL = "/.netlify/functions/testFunc"; // fail
@@ -26,6 +31,8 @@ const testFunc = async () => {
       const content = await response.json();
       fortuneText.innerText = content;
       fortune.classList.remove("hidden");
+      // scrollTop has no effect if display: none is set!
+      fortuneTextContainer.scrollTop = 0;
     }
   } catch (error) {
     console.log(error);

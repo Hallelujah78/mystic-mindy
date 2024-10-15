@@ -19,9 +19,9 @@
 # To Do
 
 - light/dark favicons for preferred theme
-- the fortune "manuscript" remembers where the user has scrolled to
-  - subsequent fortune retrieval means the fortune is scrolled to the bottom when it is opened
-- disable scrolling and/or force scroll to top of the main page when we click the crystal ball
+- ~~the fortune "manuscript" remembers where the user has scrolled to~~ **DONE**
+  - ~~subsequent fortune retrieval means the fortune is scrolled to the bottom when it is opened~~ **DONE**
+- ~~disable scrolling and/or force scroll to top of the main page when we click the crystal ball~~ **DONE**
 
 # Sources
 
@@ -30,4 +30,4 @@
 - crystal ball icon from https://www.svgrepo.com
 - Dog and parchment images generated with https://deepai.org/machine-learning-model/text2img
 
-- updated notes so i can redeploy, netlify function not working right now
+- ~~updated notes so i can redeploy, netlify function not working right now~~ **FIXED**
