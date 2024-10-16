@@ -19,6 +19,11 @@
 # To Do
 
 - light/dark favicons for preferred theme
+- layout for different screen sizes, widths:
+  - 414 and below - text is wrapping for "MINDY BROWNE | CANINE FORTUNE TELLER"
+  - below 840-ish - we have a 2 column layout but content starts to overflow on the right
+    - font-size for "my name is" could be smaller and/or use a single column layout up to 840
+    - line-spacing for the h1 is also way too much
 - ~~the fortune "manuscript" remembers where the user has scrolled to~~ **DONE**
   - ~~subsequent fortune retrieval means the fortune is scrolled to the bottom when it is opened~~ **DONE**
 - ~~disable scrolling and/or force scroll to top of the main page when we click the crystal ball~~ **DONE**
