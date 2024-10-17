@@ -78,7 +78,8 @@ img {
 .about-content {
     width: 60%;
     margin: auto;
-    height: 70vh;
+    height: fit-content;
+
 }
 
 .gloria-hallelujah-regular {
@@ -348,7 +349,7 @@ footer div p {
 
     .about-content {
         width: 80%;
-        margin-top: 17vh;
+
     }
 }
 
@@ -389,7 +390,7 @@ footer div p {
 
     .img-container {
         height: 25vh;
-        margin-top: 12.5vh;
+        margin-top: 17vh;
     }
 
     h1.gloria-hallelujah-regular {
@@ -398,12 +399,17 @@ footer div p {
     }
 
     .image-section {
-        height: 25vh;
+        height: 30vh;
     }
 
     .about-section {
         width: 100%;
+    }
 
+    .about-content {
+        width: 80%;
+        height: 75vh;
+        margin-top: 20vh;
     }
 
 
